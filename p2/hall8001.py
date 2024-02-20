@@ -69,21 +69,12 @@ for linea in linee:
         lista_linee : list = []                             # azzeramento lista
         id2line[id_conversazione] = lista_linee             # inserimento lista azzerata nella chiave del dizionario
 
-"""
-if len(_linea) == 3:
-        lista_linee.append(pulizia_testo(_linea[1]))        # pulizia testo a aggiunta alla lista lista_linee della linea di conversazione in esame
-        id2line[id_conversazione] = lista_linee             # aggiornamento della key del dizionario con la lista_linee aggiornata
-"""
-
 
 condizioni_uscita = ("!exit", "!quit", "!q")                # Creazione oggetto chatbot tramite la libreria chatterbot
 
 chatbot = CB("HALL8000")
 trainer = ListTrainer(chatbot)
 
-
-#lunghezza_id2line = len(id2line)
-#print(id2line)
 indice = 0
 lista_conversazione : list = []
 
